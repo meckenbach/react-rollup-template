@@ -7,7 +7,7 @@ import typescript from '@rollup/plugin-typescript'
 export default {
   input: 'src/index.tsx',
   output: {
-    file: 'dist/bundle.js',
+    file: 'static/dist/bundle.js',
     format: 'iife',
     globals: {
       react: 'React',

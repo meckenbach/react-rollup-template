@@ -6,4 +6,4 @@
 !.yarn/versions
 .pnp.*
 node_modules
-dist
+static/dist
