@@ -22,7 +22,8 @@ export default {
     // Resolve Node modules
     nodeResolve(),
     replace({
-      'process.env.NODE_ENV': JSON.stringify('production')
+      'process.env.NODE_ENV': JSON.stringify('production'),
+      preventAssignment: true
     })
   ],
   watch: {
