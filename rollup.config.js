@@ -2,11 +2,12 @@ import babel from '@rollup/plugin-babel'
 import commonjs from '@rollup/plugin-commonjs'
 import nodeResolve from '@rollup/plugin-node-resolve'
 import replace from '@rollup/plugin-replace'
+import typescript from '@rollup/plugin-typescript'
 
 import pkg from './package.json'
 
 export default {
-  input: 'src/main.js',
+  input: 'src/index.tsx',
   output: {
     file: `public/${pkg.name}.js`,
     format: 'iife',
@@ -24,7 +25,8 @@ export default {
     replace({
       'process.env.NODE_ENV': JSON.stringify('production'),
       preventAssignment: true
-    })
+    }),
+    typescript()
   ],
   watch: {
     exclude: ['node_modules/**']

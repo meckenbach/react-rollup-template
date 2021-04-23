@@ -1,0 +1,10 @@
+{
+    "compilerOptions": {
+        "jsx": "react",
+        "module": "es6",
+        "outDir": "./public"
+    },
+    "exclude": [
+        "node_modules"
+    ]
+}
