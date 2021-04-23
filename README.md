@@ -1,4 +1,5 @@
-React+Rollup+Express Boilerplate.
+React+Typescript+Rollup+Express.
 
-    npm install
-    npm run build
+    yarn
+    yarn install
+    yarn run build
