@@ -1,8 +1,13 @@
 import * as React from 'react'
 import * as ReactDOM from 'react-dom'
 
-import { Counter } from './counter'
 
 const app = document.getElementById('app')
 
-ReactDOM.render(<Counter />, app)
+function Hello(): JSX.Element {
+    return (
+        <h1>Hello, World!</h1>
+    )
+}
+
+ReactDOM.render(<Hello />, app)
