@@ -1,12 +1,8 @@
 import * as React from 'react'
 import * as ReactDOM from 'react-dom'
 
+import { Counter } from './counter'
+
 const app = document.getElementById('app')
 
-class Hello extends React.Component {
-  render () {
-    return <h1>Hello, World!</h1>
-  }
-}
-
-ReactDOM.render(<Hello />, app)
+ReactDOM.render(<Counter />, app)
